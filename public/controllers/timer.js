@@ -12,6 +12,12 @@
                     code: "1234",
                     time: 1234,
                     adjust: 0
+                },
+                {
+                    description: "Another one",
+                    code: "56789",
+                    time: 567,
+                    adjust: 30
                 }];
             },
             controllerAs: "timer"
