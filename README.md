@@ -1,4 +1,4 @@
 timer
 =====
 
-A simple web based timer
+A simple web based timer and countdown
