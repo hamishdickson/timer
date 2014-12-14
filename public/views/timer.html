@@ -7,12 +7,12 @@
       <th>Start/stop</th>
       <th>Adjust</th>
     </tr>
-    <tr>
-      <td>{{timer.description}}</td>
-      <td>{{timer.code}}</td>
-      <td>{{timer.time}}</td>
-      <td><button type="button">Start</button></td>
-      <td>{{timer.adjust}}</td>
+    <tr ng-repeat="time in timer.times track by $index">
+      <td>{{time.description}}</td>
+      <td>{{time.code}}</td>
+      <td>{{time.time}}</td>
+      <td><button type="button" class="btn btn-default">Start</button></td>
+      <td>{{time.adjust}}</td>
     </tr>
     <tr>
       <td>Another job</td>

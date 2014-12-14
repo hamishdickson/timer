@@ -7,10 +7,12 @@
             restrict: 'E',
             templateUrl: 'public/views/timer.html',
             controller: function() {
-                this.description = "This is an example job";
-                this.code = "1234";
-                this.time = 1234;
-                this.adjust = 0;
+                this.times = [{
+                    description: "This is an example job",
+                    code: "1234",
+                    time: 1234,
+                    adjust: 0
+                }];
             },
             controllerAs: "timer"
         };
