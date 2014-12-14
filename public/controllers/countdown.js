@@ -5,7 +5,7 @@
 
         return{
             restrict: 'E',
-            templateUrl: '../views/countdown.html'
+            templateUrl: 'public/views/countdown.html'
         };
     });
 })();
