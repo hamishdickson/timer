@@ -1,11 +1,11 @@
 (function () {
-    var app = angular.module('countdown-controller', []);
+    var app = angular.module('countdown-directive', []);
 
     app.directive('countdown', function(){
 
         return{
             restrict: 'E',
-            templateUrl: '../public/views/countdown.html'
+            templateUrl: '../views/countdown.html'
         };
     });
 })();
