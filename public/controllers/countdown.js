@@ -1,7 +1,7 @@
 (function () {
-    var app = angular.module('countdown-controller', []);
+    var app = angular.module('countdown-directive', []);
 
-    app.directive('CountdownDirective', function(){
+    app.directive('countdown', function(){
 
         return{
             restrict: 'E',
