@@ -5,7 +5,14 @@
 
         return{
             restrict: 'E',
-            templateUrl: 'public/views/timer.html'
+            templateUrl: 'public/views/timer.html',
+            controller: function() {
+                this.description = "This is an example job";
+                this.code = "1234";
+                this.time = 1234;
+                this.adjust = 0;
+            },
+            controllerAs: "timer"
         };
     });
 })();
