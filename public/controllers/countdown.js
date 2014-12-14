@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module('countdown-directive', []);
+    var app = angular.module('countdown-controller', []);
 
     app.directive('countdown', function(){
 
