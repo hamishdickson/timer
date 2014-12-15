@@ -11,15 +11,9 @@
       <td>{{time.description}}</td>
       <td>{{time.code}}</td>
       <td>{{time.time}}</td>
-      <td><button type="button" class="btn btn-default">Start</button></td>
+      <td ng-show="time.isSet(time.code)"><button type="button" class="btn btn-default">stop</button></td>
+      <td ng-show="!time.isSet(time.code)" ng-click="time.setActive(time.code)"><button type="button" class="btn btn-default">start</button></td>
       <td>{{time.adjust}}</td>
-    </tr>
-    <tr>
-      <td>Another job</td>
-      <td>56789</td>
-      <td>1:23</td>
-      <td><button type="button">Stop</button></td>
-      <td>30</td>
     </tr>
   </table>
 </div>

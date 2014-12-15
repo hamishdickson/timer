@@ -19,6 +19,22 @@
                     time: 567,
                     adjust: 30
                 }];
+
+                this.newTime = {};
+
+                this.active = "";
+
+                this.addTime = function(times) {
+                    times.time.push(this.newTime);
+                };
+
+                this.isSet = function(inCode) {
+                    return (this.active === inCode);
+                };
+
+                this.setActive = function(inCode) {
+                    this.active = inCode;
+                };
             },
             controllerAs: "timer"
         };
