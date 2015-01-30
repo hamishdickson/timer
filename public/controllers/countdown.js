@@ -1,32 +1,31 @@
 (function () {
     var app = angular.module('countdown-directive', []);
 
-    app.directive('countdown', function(){
+    app.directive('countdown', function () {
 
-        return{
+        return {
             restrict: 'E',
             templateUrl: 'public/views/countdown.html',
-            controller: [ '$timeout', '$scope', function($timeout, $scope) {
+            controller: [ '$timeout', '$scope', function ($timeout, $scope) {
                 //this.initial = 1500000; // 25 min
-                this.initial = 2000; // 25 min
-                this.time = this.initial;
+                this.initial = 2000;
+                $scope.time = this.initial;
 
-                this.restartCountdown = function() {
-                    this.time = this.initial;
-                    this.startCountdown(30000);
+                $scope.restartCountdown = function() {
+                    $scope.time = this.initial;
+                    startCountdown(3000);
                 };
 
-                this.startCountdown = function(inTime) {
-              
+                function startCountdown(inTime) {
                     if (inTime >= 1000) {
-                        this.time = inTime;
-                        $timeout(function() {
-                                this.startCountdown(inTime - 1000)
+                        $scope.time = inTime;
+                        $timeout(function () {
+                            startCountdown(inTime - 1000);
                         }, 1000);
                     }
+                    var notification = new Notification("Timer ended");
                     return;
                 };
-
             }],
             controllerAs: "countdown"
         };
