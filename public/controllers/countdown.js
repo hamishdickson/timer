@@ -8,12 +8,12 @@
             templateUrl: 'public/views/countdown.html',
             controller: [ '$timeout', '$scope', function ($timeout, $scope) {
                 //this.initial = 1500000; // 25 min
-                this.initial = 2000;
+                this.initial =5000;
                 $scope.time = this.initial;
 
                 $scope.restartCountdown = function() {
                     $scope.time = this.initial;
-                    startCountdown(3000);
+                    startCountdown(5000);
                 };
 
                 function startCountdown(inTime) {
