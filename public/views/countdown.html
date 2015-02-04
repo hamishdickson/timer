@@ -1,4 +1,5 @@
 <div>
-  <p>Time: {{time}}</p>
-  <button type="button" class="btn btn-default" ng-click="restartCountdown(2000)">Restart</button>
+  <p ng-class="countdownClass()">Time: {{time}}</p>
+  <button type="button" class="btn btn-default"
+  ng-click="restartCountdown(2000)">Restart</button>
 </div>

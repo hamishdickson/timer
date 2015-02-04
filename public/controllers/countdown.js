@@ -10,6 +10,7 @@
                 //this.initial = 1500000; // 25 min
                 this.initial =5000;
                 $scope.time = this.initial;
+                var classForCountdown = "";
 
                 $scope.restartCountdown = function() {
                     $scope.time = this.initial;
@@ -23,9 +24,13 @@
                             startCountdown(inTime - 1000);
                         }, 1000);
                     }
-                    var notification = new Notification("Timer ended");
+                    classForCountdown = "ended"
                     return;
                 };
+
+                function countdownClass() {
+                    return classForCountdown;
+                }
             }],
             controllerAs: "countdown"
         };
