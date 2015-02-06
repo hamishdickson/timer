@@ -2,18 +2,22 @@
     var app = angular.module('countdown-directive', []);
 
     app.directive('countdown', function () {
-    this.initial = 1500000; // 25 min
 
         return {
             restrict: 'E',
             templateUrl: 'public/views/countdown.html',
             controller: [ '$timeout', '$scope', function ($timeout, $scope) {
-            
-                $scope.time = msToTime(this.initial);
+                var initial = 1500000; // 25 min
                 var classForCountdown = "";
 
+                $scope.buttonText = "Start";
+                $scope.time = msToTime(initial);
+
                 $scope.restartCountdown = function() {
-                    startCountdown(this.intitial);
+                    $scope.buttonText = "Restart";
+                    var startTime = initial;
+                    $scope.time = msToTime(startTime);
+                    startCountdown(startTime);
                 };
 
                 function startCountdown(inTime) {
