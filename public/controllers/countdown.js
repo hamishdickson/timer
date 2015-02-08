@@ -12,8 +12,10 @@
 
                 $scope.buttonText = "Start";
                 $scope.time = msToTime(initial);
+                $scope.cdBtnClass = "btn-default";
 
                 $scope.restartCountdown = function() {
+                    $scope.cdBtnClass = "btn-success";
                     $scope.buttonText = "Restart";
                     var startTime = initial;
                     $scope.time = msToTime(startTime);

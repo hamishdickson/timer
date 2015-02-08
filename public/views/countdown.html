@@ -1,7 +1,11 @@
 <div class="panel col-md-6">
-  <div>
-    <h2>countdown</h2>
-  </div>
+  <h2>countdown</h2>
+
+  <p>How to use: once you start a timer, you should work until
+  it has counted down then take at least 5mins as a break. If for
+  some reason you have to step away or your concentration breaks,
+  then take a break and start again with 25mins.</p>
+
 <!--  <div>
     <select>
       <option value="150000">25min</option>
@@ -10,7 +14,7 @@
   </div>-->
   <div>
     <p>Time: {{time}}</p>
-    <button type="button" class="btn btn-default"
+    <button type="button" class="btn {{cdBtnClass}}"
             ng-click="restartCountdown(2000)">{{buttonText}}</button>
   </div>
 </div>
