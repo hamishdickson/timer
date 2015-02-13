@@ -47,6 +47,18 @@
                 function countdownClass() {
                     return classForCountdown;
                 }
+
+                $scope.values = [{
+                    id: 1,
+                    label: '25min',
+                    subItem: { name: 'aSubItem' }
+                }, {
+                    id: 2,
+                    label: '5min',
+                    subItem: { name: 'bSubItem' }
+                }];
+
+                $scope.selected = { name: 'aSubItem' };
             }],
             controllerAs: "countdown"
         };

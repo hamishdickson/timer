@@ -1,0 +1,183 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'gardening' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose cache add [ 'gardening', null ]
+5 verbose cache add name=undefined spec="gardening" args=["gardening",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'gardening',
+6 verbose parsed url   path: 'gardening',
+6 verbose parsed url   href: 'gardening' }
+7 silly lockFile 122207f0-gardening gardening
+8 verbose lock gardening /Users/hamishdickson/.npm/122207f0-gardening.lock
+9 silly lockFile 122207f0-gardening gardening
+10 silly lockFile 122207f0-gardening gardening
+11 verbose addNamed [ 'gardening', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile fe9dd4b3-gardening gardening@
+14 verbose lock gardening@ /Users/hamishdickson/.npm/fe9dd4b3-gardening.lock
+15 silly addNameRange { name: 'gardening', range: '*', hasData: false }
+16 verbose url raw gardening
+17 verbose url resolving [ 'https://registry.npmjs.org/', './gardening' ]
+18 verbose url resolved https://registry.npmjs.org/gardening
+19 info trying registry request attempt 1 at 13:42:28
+20 http GET https://registry.npmjs.org/gardening
+21 http 200 https://registry.npmjs.org/gardening
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Sun, 08 Feb 2015 13:42:28 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     etag: '"6F4PXEXA8NN6MY1R37U3BGZ4R"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=60',
+22 silly registry.get     'content-length': '8229',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-ams4146-AMS',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1423402948.217357,VS0,VE393',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'gardening', range: '*', hasData: true }
+24 silly addNameRange versions [ 'gardening',
+24 silly addNameRange   [ '0.0.0', '1.0.0', '1.0.1', '1.2.1', '1.3.1', '1.4.1', '1.4.2' ] ]
+25 verbose addNamed [ 'gardening', '1.4.2' ]
+26 verbose addNamed [ '1.4.2', '1.4.2' ]
+27 silly lockFile 1d988df1-gardening-1-4-2 gardening@1.4.2
+28 verbose lock gardening@1.4.2 /Users/hamishdickson/.npm/1d988df1-gardening-1-4-2.lock
+29 silly lockFile 0d38b02c-rg-gardening-gardening-1-4-2-tgz https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz
+30 verbose lock https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz /Users/hamishdickson/.npm/0d38b02c-rg-gardening-gardening-1-4-2-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz',
+31 verbose addRemoteTarball   '95a4bf953838d99a6802a0f0bbc480ea3cd41425' ]
+32 info retry fetch attempt 1 at 13:42:29
+33 verbose fetch to= /var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/tmp.tgz
+34 http GET https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz
+35 http 200 https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz
+36 verbose tar unpack /var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/tmp.tgz
+37 silly lockFile a66f32d0-9000-0-32797530433163047-package tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package
+38 verbose lock tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package /Users/hamishdickson/.npm/a66f32d0-9000-0-32797530433163047-package.lock
+39 silly lockFile f9df9f24-9000-0-32797530433163047-tmp-tgz tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/tmp.tgz
+40 verbose lock tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/tmp.tgz /Users/hamishdickson/.npm/f9df9f24-9000-0-32797530433163047-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry index.js
+46 silly gunzTarPerm extractEntry .travis.yml
+47 silly gunzTarPerm extractEntry test/test.js
+48 silly lockFile a66f32d0-9000-0-32797530433163047-package tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package
+49 silly lockFile a66f32d0-9000-0-32797530433163047-package tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package
+50 silly lockFile f9df9f24-9000-0-32797530433163047-tmp-tgz tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/tmp.tgz
+51 silly lockFile f9df9f24-9000-0-32797530433163047-tmp-tgz tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/tmp.tgz
+52 verbose tar pack [ '/Users/hamishdickson/.npm/gardening/1.4.2/package.tgz',
+52 verbose tar pack   '/var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package' ]
+53 verbose tarball /Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+54 verbose folder /var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package
+55 silly lockFile a66f32d0-9000-0-32797530433163047-package tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package
+56 verbose lock tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package /Users/hamishdickson/.npm/a66f32d0-9000-0-32797530433163047-package.lock
+57 silly lockFile 9bc0d440--npm-gardening-1-4-2-package-tgz tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+58 verbose lock tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz /Users/hamishdickson/.npm/9bc0d440--npm-gardening-1-4-2-package-tgz.lock
+59 silly lockFile a66f32d0-9000-0-32797530433163047-package tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package
+60 silly lockFile a66f32d0-9000-0-32797530433163047-package tar:///var/folders/cv/m1cwlqf51nb46w6_0lp2zfzw0000gn/T/npm-63059-nnNAePan/1423402949000-0.32797530433163047/package
+61 silly lockFile 9bc0d440--npm-gardening-1-4-2-package-tgz tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+62 silly lockFile 9bc0d440--npm-gardening-1-4-2-package-tgz tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+63 silly lockFile fe42258d-kson-npm-gardening-1-4-2-package /Users/hamishdickson/.npm/gardening/1.4.2/package
+64 verbose lock /Users/hamishdickson/.npm/gardening/1.4.2/package /Users/hamishdickson/.npm/fe42258d-kson-npm-gardening-1-4-2-package.lock
+65 silly lockFile fe42258d-kson-npm-gardening-1-4-2-package /Users/hamishdickson/.npm/gardening/1.4.2/package
+66 silly lockFile fe42258d-kson-npm-gardening-1-4-2-package /Users/hamishdickson/.npm/gardening/1.4.2/package
+67 verbose tar unpack /Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+68 silly lockFile 4579d3b2-kson-npm-gardening-1-4-2-package tar:///Users/hamishdickson/.npm/gardening/1.4.2/package
+69 verbose lock tar:///Users/hamishdickson/.npm/gardening/1.4.2/package /Users/hamishdickson/.npm/4579d3b2-kson-npm-gardening-1-4-2-package.lock
+70 silly lockFile 9bc0d440--npm-gardening-1-4-2-package-tgz tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+71 verbose lock tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz /Users/hamishdickson/.npm/9bc0d440--npm-gardening-1-4-2-package-tgz.lock
+72 silly gunzTarPerm modes [ '755', '644' ]
+73 silly gunzTarPerm extractEntry package.json
+74 silly gunzTarPerm extractEntry .npmignore
+75 silly gunzTarPerm extractEntry README.md
+76 silly gunzTarPerm extractEntry index.js
+77 silly gunzTarPerm extractEntry .travis.yml
+78 silly gunzTarPerm extractEntry test/test.js
+79 silly lockFile 4579d3b2-kson-npm-gardening-1-4-2-package tar:///Users/hamishdickson/.npm/gardening/1.4.2/package
+80 silly lockFile 4579d3b2-kson-npm-gardening-1-4-2-package tar:///Users/hamishdickson/.npm/gardening/1.4.2/package
+81 silly lockFile 9bc0d440--npm-gardening-1-4-2-package-tgz tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+82 silly lockFile 9bc0d440--npm-gardening-1-4-2-package-tgz tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+83 verbose chmod /Users/hamishdickson/.npm/gardening/1.4.2/package.tgz 644
+84 verbose chown /Users/hamishdickson/.npm/gardening/1.4.2/package.tgz [ 501, 20 ]
+85 silly lockFile 0d38b02c-rg-gardening-gardening-1-4-2-tgz https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz
+86 silly lockFile 0d38b02c-rg-gardening-gardening-1-4-2-tgz https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz
+87 silly lockFile 1d988df1-gardening-1-4-2 gardening@1.4.2
+88 silly lockFile 1d988df1-gardening-1-4-2 gardening@1.4.2
+89 silly lockFile fe9dd4b3-gardening gardening@
+90 silly lockFile fe9dd4b3-gardening gardening@
+91 silly resolved [ { name: 'gardening',
+91 silly resolved     version: '1.4.2',
+91 silly resolved     description: 'CLI module to check if you made a public contribution on GitHub today',
+91 silly resolved     main: 'index.js',
+91 silly resolved     bin: { garden: 'index.js' },
+91 silly resolved     scripts: { test: 'node test/test.js' },
+91 silly resolved     author: { name: 'Jessica Lord' },
+91 silly resolved     license: 'BSD-2-Clause',
+91 silly resolved     repository: { type: 'git', url: 'https://github.com/jlord/gardening.git' },
+91 silly resolved     bugs: { url: 'https://github.com/jlord/gardening/issues' },
+91 silly resolved     keywords: [ 'contibution', 'github', 'open source', 'graph' ],
+91 silly resolved     dependencies:
+91 silly resolved      { cheerio: '~0.17.0',
+91 silly resolved        request: '~2.45.0',
+91 silly resolved        minimist: '~1.1.0',
+91 silly resolved        strftime: '~0.8.2' },
+91 silly resolved     devDependencies: { tape: '~3.0.1' },
+91 silly resolved     readme: '# Gardening\n\n[![Build Status](https://travis-ci.org/jlord/gardening.svg?branch=master)](https://travis-ci.org/jlord/gardening)\n\nTending your open source garden?\n\n![garden](http://f.cl.ly/items/3X0N0M1N0C0Y1S3Y0T3s/Screen%20Shot%202014-10-19%20at%2010.50.07%20PM.png)\n\nThis is a command-line module to let you know if you (or someone else) has had a public contribution today or yesterday and to what level of green they reached (green levels are different for each user and based on average).\n\n### To install\n\n_Requires [Node.js](http://www.nodejs.org)_\n\n```bash\n$ npm install -g gardening\n```\n\n### To use\n\n```bash\n# for today\n$ garden [githubusername]\n# for yesterday\n$ garden [githubusername] -y\n```\n\n**Options**\n- `-y` returns _yesterday\'s_ contributions\n\n#### Example\n\n`$ garden jlord` or `$ garden jlord -y`\n\nWill return either:\n\n```Bash\n---\n✔︎ Green Level 2! jlord with 14 today!\n---\n```\nor\n\n```Bash\n---\n✗ Grey! jlord with 0 today.\n---\n```\n\n### Test\n\n```Bash\n$ npm test\n```\n\nCurrently just checks the 0 contributions state.\n\n---\n\n:octocat: This is very basic, but saves me a few steps in the browser.\n',
+91 silly resolved     readmeFilename: 'README.md',
+91 silly resolved     homepage: 'https://github.com/jlord/gardening',
+91 silly resolved     _id: 'gardening@1.4.2',
+91 silly resolved     dist: { shasum: '95a4bf953838d99a6802a0f0bbc480ea3cd41425' },
+91 silly resolved     _from: 'gardening@',
+91 silly resolved     _resolved: 'https://registry.npmjs.org/gardening/-/gardening-1.4.2.tgz' } ]
+92 info install gardening@1.4.2 into /usr/local/lib
+93 info installOne gardening@1.4.2
+94 info /usr/local/lib/node_modules/gardening unbuild
+95 verbose tar unpack /Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+96 silly lockFile 17559dc5-local-lib-node-modules-gardening tar:///usr/local/lib/node_modules/gardening
+97 verbose lock tar:///usr/local/lib/node_modules/gardening /Users/hamishdickson/.npm/17559dc5-local-lib-node-modules-gardening.lock
+98 silly lockFile 9bc0d440--npm-gardening-1-4-2-package-tgz tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz
+99 verbose lock tar:///Users/hamishdickson/.npm/gardening/1.4.2/package.tgz /Users/hamishdickson/.npm/9bc0d440--npm-gardening-1-4-2-package-tgz.lock
+100 silly gunzTarPerm modes [ '755', '644' ]
+101 error Error: EACCES, mkdir '/usr/local/lib/node_modules/gardening'
+101 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/gardening']
+101 error   errno: 3,
+101 error   code: 'EACCES',
+101 error   path: '/usr/local/lib/node_modules/gardening',
+101 error   fstream_type: 'Directory',
+101 error   fstream_path: '/usr/local/lib/node_modules/gardening',
+101 error   fstream_class: 'DirWriter',
+101 error   fstream_stack:
+101 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+101 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+101 error      'Object.oncomplete (fs.js:107:15)' ] }
+102 error Please try running this command again as root/Administrator.
+103 error System Darwin 14.0.0
+104 error command "node" "/usr/local/bin/npm" "install" "-g" "gardening"
+105 error cwd /Users/hamishdickson/Programming/timer
+106 error node -v v0.10.25
+107 error npm -v 1.3.24
+108 error path /usr/local/lib/node_modules/gardening
+109 error fstream_path /usr/local/lib/node_modules/gardening
+110 error fstream_type Directory
+111 error fstream_class DirWriter
+112 error code EACCES
+113 error errno 3
+114 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/gardening'
+115 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+115 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+115 error fstream_stack Object.oncomplete (fs.js:107:15)
+116 verbose exit [ 3, true ]

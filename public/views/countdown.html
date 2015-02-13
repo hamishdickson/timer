@@ -6,12 +6,11 @@
   some reason you have to step away or your concentration breaks,
   then take a break and start again with 25mins.</p>
 
-<!--  <div>
-    <select>
-      <option value="150000">25min</option>
-      <option value="5000">5sec</option>
-    </select>
-  </div>-->
+  <div>
+    <select ng-options="item.subItem as item.label for item in values
+    track by item.id" 
+            ng-model="selected"></select>
+  </div>
   <div>
     <p>Time: {{time}}</p>
     <button type="button" class="btn {{cdBtnClass}}"
