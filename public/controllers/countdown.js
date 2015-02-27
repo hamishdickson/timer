@@ -51,11 +51,13 @@
                 $scope.values = [{
                     id: 1,
                     label: '25min',
-                    subItem: { name: 'aSubItem' }
+                    subItem: { name: 'aSubItem',
+                             time: 1500000 }
                 }, {
                     id: 2,
                     label: '5min',
-                    subItem: { name: 'bSubItem' }
+                    subItem: { name: 'bSubItem',
+                             time: 300000 }
                 }];
 
                 $scope.selected = { name: 'aSubItem' };
