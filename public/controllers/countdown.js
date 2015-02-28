@@ -58,6 +58,13 @@
                     label: '5min',
                     subItem: { name: 'bSubItem',
                              time: 300000 }
+                }, {
+                    id: 3,
+                label: '10min',
+                subItem: {
+                    name: 'cSubItem',
+                    time: 600000
+                }
                 }];
 
                 $scope.selected = { name: 'aSubItem' };
